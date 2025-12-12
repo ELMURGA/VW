@@ -1,0 +1,439 @@
+# CONTEXTO COMPLETO - PROYECTO WEB VOLKSWAGEN SEVILLA UTREWAL
+
+## DESCRIPCIÓN GENERAL DEL PROYECTO
+
+Se ha creado un sitio web completo y moderno para el concesionario oficial Volkswagen Sevilla (Utrewal) con dos ubicaciones: Utrera y Alcalá de Guadaíra. El sitio está diseñado con un enfoque premium, utilizando diseño moderno con glassmorphism, gradientes, animaciones suaves y diseño responsive.
+
+---
+
+## ESTRUCTURA DE ARCHIVOS
+
+```
+/VW/
+├── index.html              (Página principal)
+├── coches-nuevos.html      (Catálogo de modelos nuevos)
+├── todos-vehiculos.html    (Categorías y comparativa)
+├── promociones.html        (Ofertas y financiación)
+├── prueba-conduccion.html  (Formulario de test drive)
+├── cita-taller.html        (Formulario de cita en taller)
+├── styles.css              (Todos los estilos CSS)
+├── script.js               (JavaScript interactivo)
+└── images/                 (Imágenes de modelos)
+    ├── polo.png
+    ├── golf.png
+    ├── tcross.png
+    ├── taigo.png
+    ├── troc.png
+    ├── tiguan.png
+    ├── passat.png
+    ├── arteon.png
+    ├── id3.png
+    ├── id4.png
+    └── id7.png
+```
+
+---
+
+## TECNOLOGÍAS UTILIZADAS
+
+- **HTML5** semántico
+- **CSS3** con variables CSS (custom properties)
+- **JavaScript** vanilla (sin frameworks)
+- **Google Fonts**: Inter (300, 400, 500, 600, 700, 800)
+- **Font Awesome 6.5.1** para iconos
+- **Diseño responsive** para móvil, tablet y desktop
+
+---
+
+## PALETA DE COLORES (Variables CSS)
+
+```css
+--vw-blue: #001e50          /* Azul corporativo VW principal */
+--vw-blue-light: #00437a    /* Azul VW claro */
+--vw-accent: #00b0f0        /* Cian/Azul acento */
+--vw-electric: #00d4aa      /* Verde eléctrico para modelos ID */
+--danger: #e74c3c           /* Rojo para promociones/alertas */
+--white: #ffffff
+--gray-100 a --gray-900     /* Escala de grises */
+```
+
+---
+
+## INFORMACIÓN DE CONTACTO (DATOS REALES)
+
+### Volkswagen Utrera
+- **Dirección**: Ctra. Écija - Jerez, 15 - 41710 Utrera (Sevilla)
+- **Teléfono General/Ventas**: 622 309 997
+- **Email Ventas**: jtristancho@utrewal.volkswagen.es
+- **Teléfono Taller**: 955 860 606
+- **Email Taller**: atc@utrewal.volkswagen.es
+- **Email Recambios**: recambios@03407.volkswagen.es
+- **Teléfono Chapa/Pintura**: 648 411 263
+- **Email Chapa/Pintura**: carroceria@utrewal.volkswagen.es
+
+### Volkswagen Alcalá de Guadaíra
+- **Dirección**: Autovía Sevilla - Málaga A92 Km 11 (margen derecho) Salida A12 - 41500 Alcalá de Guadaíra (Sevilla)
+- **Teléfono General/Ventas**: 622 309 997
+- **Teléfono Ventas**: 955 616 464
+- **Email Ventas**: csanmartin@utrewal.volkswagen.es
+- **Teléfono Taller**: 955 616 464
+- **Email Taller**: atc@utrewal.volkswagen.es
+- **Email Recambios**: recambios@03407.volkswagen.es
+
+### Redes Sociales
+- **Facebook**: https://www.facebook.com/UtrewalSevilla
+- **Instagram**: https://www.instagram.com/utrewal_sa
+- **Twitter/X**: https://twitter.com/utrewal_sa
+- **WhatsApp**: https://wa.me/34622309997
+
+---
+
+## PÁGINAS Y SECCIONES DETALLADAS
+
+### 1. INDEX.HTML (Página Principal)
+
+**Secciones incluidas:**
+
+1. **Header**
+   - Barra superior con teléfono, email y redes sociales
+   - Logo SVG de Volkswagen (creado manualmente)
+   - Menú de navegación responsive con hamburger para móvil
+
+2. **Hero Section**
+   - Slider con 3 slides (Gama completa, Eléctricos ID, Ofertas)
+   - Botones de acción
+   - Indicadores de slide
+
+3. **Modelos Destacados**
+   - Grid de 9 modelos: Polo, Golf, T-Cross, Taigo, T-Roc, Tiguan, Passat, Arteon, ID.4
+   - Cada tarjeta con: imagen, nombre, descripción, precio, botones de acción
+   - Filtros por categoría
+
+4. **Gama ID (Eléctricos)**
+   - Sección especial para modelos 100% eléctricos
+   - ID.3, ID.4, ID.7
+   - Badges con autonomía (557km, 520km, 702km)
+   - Diseño con fondo degradado verde eléctrico
+
+5. **Servicios**
+   - 4 tarjetas: Taller Oficial, Recambios Originales, Financiación, Garantía
+   - Iconos y descripciones
+
+6. **Vehículos de Ocasión (Das WeltAuto)**
+   - Grid de vehículos usados certificados
+   - Badges: Garantía 24 meses, Financiación incluida
+   - Etiqueta "Das WeltAuto"
+
+7. **Postventa**
+   - Servicios de taller, chapa/pintura, recambios
+   - Grid con iconos
+
+8. **Sección de Contacto**
+   - Formulario de contacto completo
+   - Mapas integrados de ambas ubicaciones
+   - Información de contacto de ambos concesionarios
+
+9. **Footer**
+   - Dos columnas para Utrera y Alcalá
+   - Logo VW en SVG
+   - Logos de Audi y Skoda (también son distribuidores)
+   - Redes sociales
+   - Copyright y enlaces legales
+
+10. **Elementos flotantes**
+    - Botón "Scroll to top"
+    - Botón flotante de WhatsApp
+    - Widget de accesibilidad (tamaño fuente, contraste, reducir animaciones)
+    - Banner de cookies
+
+---
+
+### 2. COCHES-NUEVOS.HTML
+
+**Contenido:**
+- Hero con breadcrumb
+- Filtros: Categoría, Combustible, Precio máximo
+- Grid de 11 modelos con precios actualizados:
+
+| Modelo | Tipo | Precio desde |
+|--------|------|--------------|
+| Polo | Urbano | 16.900€ |
+| Golf | Compacto | 25.480€ |
+| T-Cross | SUV Urbano | 20.300€ |
+| Taigo | Coupé SUV | 19.900€ |
+| T-Roc | SUV Compacto | 23.700€ |
+| Tiguan | SUV Mediano | 34.300€ |
+| Passat | Familiar | 43.200€ |
+| Arteon | Premium | 54.800€ |
+| ID.3 | Eléctrico | 28.500€ |
+| ID.4 | SUV Eléctrico | 34.400€ |
+| ID.7 | Berlina Eléctrica | 58.470€ |
+
+- Cada tarjeta tiene: badge, imagen, specs (motor, potencia), precio, botones
+- Sección CTA con teléfono y WhatsApp
+
+---
+
+### 3. TODOS-VEHICULOS.HTML
+
+**Contenido:**
+- Hero con breadcrumb
+- 6 categorías con tarjetas:
+  1. Turismos (Polo, Golf, Passat, Arteon)
+  2. SUV & Crossover (T-Cross, Taigo, T-Roc, Tiguan, Touareg) - Badge "Más vendido"
+  3. 100% Eléctricos (ID.3, ID.4, ID.5, ID.7, ID. Buzz) - Badge "Cero emisiones"
+  4. Vehículos Comerciales (Caddy, Transporter, Caravelle, Multivan, Crafter)
+  5. Monovolúmenes (Touran, Sharan)
+  6. Vehículos de Ocasión - Badge "Das WeltAuto"
+
+- Sección de estadísticas:
+  - +500 vehículos disponibles
+  - 35 modelos en gama
+  - 2 concesionarios
+  - +25 años de experiencia
+
+- Tabla comparativa de modelos populares
+- Servicios destacados: Financiación, Tasación, Entrega a domicilio, Garantía
+- CTA final
+
+---
+
+### 4. PROMOCIONES.HTML
+
+**Contenido:**
+- Hero con badge "Ofertas limitadas"
+- Banner destacado: Polo Match desde 16.900€ (antes 23.050€)
+- Grid de ofertas:
+
+| Modelo | Precio antes | Precio ahora | Cuota/mes |
+|--------|-------------|--------------|-----------|
+| Taigo | 24.400€ | 19.900€ | 215€ |
+| T-Cross MÁS | 23.500€ | 20.300€ | 200€ |
+| T-Roc MÁS | 30.594€ | 23.700€ | 235€ |
+| Golf 2026 | 31.500€ | 26.400€ | 275€ |
+| Tiguan | 39.180€ | 34.300€ | 350€ |
+| ID.3 | 42.260€ | 28.500€ | 150€ My Way |
+| ID.4 | 48.015€ | 34.400€ | 250€ My Way |
+| ID.7 | 65.000€ | 58.470€ | 390€ My Way |
+
+- Sección de financiación (3 opciones):
+  1. **My Way**: Cuotas bajas, flexibilidad al final, desde 10.000 km/año
+  2. **Financiación Lineal**: El coche es tuyo, cuotas personalizadas
+  3. **My Renting**: Todo incluido, sin entrada, mantenimiento y seguro
+
+- Aviso legal sobre condiciones
+- CTA final
+
+---
+
+### 5. PRUEBA-CONDUCCION.HTML
+
+**Contenido:**
+- Hero con icono de volante
+- Sección de beneficios (5 items):
+  1. Todos los modelos disponibles
+  2. Prueba eléctricos sin compromiso
+  3. Asesoramiento personalizado
+  4. Duración flexible
+  5. Dos ubicaciones
+
+- Tarjetas de ubicación de ambos concesionarios
+- Formulario completo:
+  - Nombre, Email, Teléfono
+  - Selector de modelo (agrupado por categorías)
+  - Fecha y hora preferida
+  - Concesionario
+  - Comentarios
+  - Checkboxes: privacidad y marketing
+
+- Sección "Modelos más solicitados":
+  - Tiguan (#1 en pruebas)
+  - T-Roc (Tendencia)
+  - Golf (Clásico)
+  - ID.4 (Eléctrico)
+
+- FAQ (6 preguntas frecuentes):
+  - ¿Necesito carnet?
+  - ¿Tiene coste?
+  - ¿Cuánto dura?
+  - ¿Puedo probar varios?
+  - ¿Puedo ir acompañado?
+  - ¿Qué pasa si cancelo?
+
+---
+
+### 6. CITA-TALLER.HTML
+
+**Contenido:**
+- Hero con icono de llave
+- Sección de servicios (4 items):
+  1. Mantenimiento (revisiones, aceite, filtros)
+  2. Chapa y Pintura
+  3. Mecánica (diagnóstico y reparación)
+  4. Coche Sustitutivo
+
+- Información de contacto del taller
+- Lista de servicios disponibles:
+  - Revisiones oficiales
+  - Cambio de aceite y filtros
+  - Frenos y neumáticos
+  - Climatización
+  - Pre-ITV
+  - Diagnosis electrónica
+  - Chapa y pintura
+  - Recambios originales
+
+- Formulario completo:
+  - Nombre, Email, Teléfono
+  - Marca (VW, Audi, Skoda, Otra)
+  - Modelo, Matrícula
+  - Tipo de servicio (selector)
+  - Fecha preferida
+  - Ubicación (Utrera/Alcalá)
+  - Comentarios
+  - Checkbox privacidad
+
+- Tarjetas de ubicación de ambos talleres con:
+  - Dirección
+  - Teléfono
+  - Email
+  - Horario
+  - Servicios disponibles
+
+- CTA con teléfonos directos de ambos talleres
+
+---
+
+## MENÚ DE NAVEGACIÓN (CONSISTENTE EN TODAS LAS PÁGINAS)
+
+```html
+<ul class="nav-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="coches-nuevos.html">Coches Nuevos</a></li>
+    <li><a href="promociones.html">Promociones</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="cita-taller.html">Cita Taller</a></li>
+    <li><a href="prueba-conduccion.html">Prueba</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+</ul>
+```
+
+---
+
+## FUNCIONALIDADES JAVASCRIPT (script.js)
+
+1. **Header scroll**: Se hace más compacto al hacer scroll
+2. **Menú móvil**: Toggle hamburger menu
+3. **Slider hero**: Autoplay con indicadores y navegación
+4. **Filtros de vehículos**: Por categoría
+5. **Scroll to top**: Botón flotante
+6. **Formularios**: Validación y simulación de envío
+7. **Widget de accesibilidad**:
+   - Cambiar tamaño de fuente
+   - Alto contraste
+   - Reducir animaciones
+8. **Banner de cookies**: Con localStorage para recordar preferencia
+9. **Smooth scroll**: Para enlaces internos
+10. **Animaciones on scroll**: Elementos aparecen al hacer scroll
+
+---
+
+## CARACTERÍSTICAS DE DISEÑO
+
+### Efectos visuales:
+- Glassmorphism (backdrop-filter: blur)
+- Gradientes suaves
+- Animaciones CSS (hover, transitions)
+- Sombras con niveles (shadow-sm, shadow-md, shadow-lg, shadow-xl)
+- Border radius consistentes
+
+### Responsive breakpoints:
+- Mobile: hasta 768px
+- Tablet: 768px - 1024px
+- Desktop: 1024px+
+
+### Tipografía:
+- Fuente: Inter
+- Tamaños: desde 0.75rem hasta 3rem
+- Pesos: 300 (light) a 800 (extra-bold)
+
+---
+
+## ELEMENTOS ESPECIALES
+
+### Logo VW (SVG custom):
+```svg
+<svg viewBox="0 0 70 70">
+    <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4"/>
+    <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5"/>
+    <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5"/>
+</svg>
+```
+
+### Badges utilizados:
+- "Nuevo 2024"
+- "100% Eléctrico"
+- "Premium"
+- "Más vendido"
+- "Das WeltAuto"
+- "Hot"
+- "MOVES III"
+- "Best Seller"
+- "Oferta"
+
+### Botones:
+- `.btn-primary` (azul VW)
+- `.btn-secondary` (contorno)
+- `.btn-outline` (transparente con borde)
+- `.btn-electric` (verde eléctrico)
+- `.btn-full` (ancho completo)
+- `.btn-lg` (grande)
+
+---
+
+## IMÁGENES
+
+Todas las imágenes de vehículos fueron generadas con IA y están en formato PNG con fondo transparente/gradiente. Nombres de archivo:
+- polo.png
+- golf.png
+- tcross.png
+- taigo.png
+- troc.png
+- tiguan.png
+- passat.png
+- arteon.png
+- id3.png
+- id4.png
+- id7.png
+
+Las imágenes de fondo del hero de las páginas secundarias utilizan una imagen de Volkswagen ID.4 de Unsplash.
+
+---
+
+## NOTAS ADICIONALES
+
+1. El sitio está preparado para SEO con meta tags apropiados en cada página
+2. Todos los formularios incluyen validación básica
+3. Los enlaces de redes sociales apuntan a las cuentas reales de Utrewal
+4. Se utiliza el icono de X (Twitter rebrandeado) con `fa-x-twitter`
+5. El footer incluye logos de VW, Audi y Skoda ya que el grupo distribuye las tres marcas
+6. La página está en español
+7. Los precios son orientativos y se indica que incluyen IVA
+8. Las ofertas tienen fecha de validez hasta 31/12/2025
+
+---
+
+## ARCHIVOS PENDIENTES O SUGERENCIAS FUTURAS
+
+1. Página de "Aviso Legal"
+2. Página de "Política de Privacidad"
+3. Página de "Política de Cookies"
+4. Integración real con backend para formularios
+5. Sistema de reserva de citas en tiempo real
+6. Catálogo de vehículos de ocasión dinámico
+7. Chat en vivo integrado
+8. Versión en inglés
+
+---
+
+Este documento contiene toda la información necesaria para entender el contexto completo del proyecto web de Volkswagen Sevilla Utrewal.

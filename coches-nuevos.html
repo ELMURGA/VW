@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Coches nuevos Volkswagen en Sevilla. Descubre toda la gama de vehículos nuevos disponibles en Utrewal: Polo, Golf, T-Cross, T-Roc, Tiguan, ID.3, ID.4 y más.">
+    <meta name="keywords"
+        content="Volkswagen nuevos, coches nuevos Sevilla, Polo, Golf, Tiguan, T-Roc, T-Cross, ID.3, ID.4, concesionario Volkswagen">
+    <title>Coches Nuevos Volkswagen | Concesionario Utrewal Sevilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-bar">
+                    <a href="tel:622309997" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>622 309 997</span>
+                    </a>
+                    <a href="mailto:jtristancho@utrewal.volkswagen.es" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jtristancho@utrewal.volkswagen.es</span>
+                    </a>
+                    <div class="social-links-top">
+                        <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="X"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <svg class="vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4" />
+                        <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5" />
+                        <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5" />
+                    </svg>
+                    <span class="brand-text">Volkswagen Sevilla</span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="coches-nuevos.html" class="nav-link">Coches Nuevos</a></li>
+                    <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="cita-taller.html" class="nav-link">Cita Taller</a></li>
+                    <li><a href="prueba-conduccion.html" class="nav-link">Prueba</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a>
+                    <span>/</span>
+                    <a href="#">Coches</a>
+                    <span>/</span>
+                    <span>Nuevos</span>
+                </nav>
+                <h1>Coches Nuevos Volkswagen</h1>
+                <p>Descubre toda la gama de vehículos nuevos disponibles en nuestros concesionarios de Utrera y Alcalá
+                    de Guadaíra</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="vehicle-filters">
+        <div class="container">
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <label>Categoría</label>
+                    <select id="filter-category">
+                        <option value="all">Todas las categorías</option>
+                        <option value="compacto">Compactos</option>
+                        <option value="suv">SUV / Crossover</option>
+                        <option value="familiar">Berlinas / Familiares</option>
+                        <option value="electrico">100% Eléctricos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Combustible</label>
+                    <select id="filter-fuel">
+                        <option value="all">Todos</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="diesel">Diésel</option>
+                        <option value="hibrido">Híbrido</option>
+                        <option value="electrico">Eléctrico</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Precio máximo</label>
+                    <select id="filter-price">
+                        <option value="all">Sin límite</option>
+                        <option value="25000">Hasta 25.000€</option>
+                        <option value="35000">Hasta 35.000€</option>
+                        <option value="50000">Hasta 50.000€</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary filter-btn-apply">
+                    <i class="fas fa-search"></i> Filtrar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Grid -->
+    <section class="vehicles-section">
+        <div class="container">
+            <div class="vehicles-header">
+                <h2>Gama Volkswagen 2024</h2>
+                <p>Todos los modelos nuevos con precios actualizados. IVA incluido.</p>
+            </div>
+
+            <div class="vehicles-grid">
+                <!-- Polo -->
+                <article class="vehicle-card" data-category="compacto" data-fuel="gasolina">
+                    <div class="vehicle-badge">Urbano</div>
+                    <div class="vehicle-image">
+                        <img src="images/polo.png" alt="Volkswagen Polo 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Polo</h3>
+                        <p class="vehicle-tagline">El urbano por excelencia</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 80-207 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">16.900 €</span>
+                            <span class="price-note">*Con financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Golf -->
+                <article class="vehicle-card" data-category="compacto" data-fuel="gasolina,hibrido">
+                    <div class="vehicle-badge new">Nuevo 2024</div>
+                    <div class="vehicle-image">
+                        <img src="images/golf.png" alt="Volkswagen Golf 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Golf</h3>
+                        <p class="vehicle-tagline">El icono reinventado</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 116-333 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">25.480 €</span>
+                            <span class="price-note">*PVP recomendado</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- T-Cross -->
+                <article class="vehicle-card" data-category="suv" data-fuel="gasolina">
+                    <div class="vehicle-badge">SUV Urbano</div>
+                    <div class="vehicle-image">
+                        <img src="images/tcross.png" alt="Volkswagen T-Cross 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen T-Cross</h3>
+                        <p class="vehicle-tagline">El crossover urbano</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 95-150 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">20.300 €</span>
+                            <span class="price-note">*Con financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Taigo -->
+                <article class="vehicle-card" data-category="suv" data-fuel="gasolina">
+                    <div class="vehicle-badge">Coupé SUV</div>
+                    <div class="vehicle-image">
+                        <img src="images/taigo.png" alt="Volkswagen Taigo 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Taigo</h3>
+                        <p class="vehicle-tagline">El coupé SUV urbano</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 95-150 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">19.900 €</span>
+                            <span class="price-note">*Con financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- T-Roc -->
+                <article class="vehicle-card" data-category="suv" data-fuel="gasolina,hibrido">
+                    <div class="vehicle-badge">SUV Compacto</div>
+                    <div class="vehicle-image">
+                        <img src="images/troc.png" alt="Volkswagen T-Roc 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen T-Roc</h3>
+                        <p class="vehicle-tagline">Diseño que destaca</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 110-300 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">23.700 €</span>
+                            <span class="price-note">*Con financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tiguan -->
+                <article class="vehicle-card" data-category="suv" data-fuel="gasolina,hibrido">
+                    <div class="vehicle-badge new">Nuevo 2024</div>
+                    <div class="vehicle-image">
+                        <img src="images/tiguan.png" alt="Volkswagen Tiguan 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Tiguan</h3>
+                        <p class="vehicle-tagline">El SUV más versátil</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido PHEV</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 130-272 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">34.300 €</span>
+                            <span class="price-note">*Con financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Passat -->
+                <article class="vehicle-card" data-category="familiar" data-fuel="gasolina,hibrido">
+                    <div class="vehicle-badge">Familiar</div>
+                    <div class="vehicle-image">
+                        <img src="images/passat.png" alt="Volkswagen Passat 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Passat</h3>
+                        <p class="vehicle-tagline">Elegancia ejecutiva</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / PHEV</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 150-272 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">43.200 €</span>
+                            <span class="price-note">*PVP recomendado</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Arteon -->
+                <article class="vehicle-card" data-category="familiar" data-fuel="gasolina,hibrido">
+                    <div class="vehicle-badge premium">Premium</div>
+                    <div class="vehicle-image">
+                        <img src="images/arteon.png" alt="Volkswagen Arteon 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen Arteon</h3>
+                        <p class="vehicle-tagline">Gran turismo premium</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / PHEV</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 190-320 CV</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">54.800 €</span>
+                            <span class="price-note">*PVP recomendado</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ID.3 -->
+                <article class="vehicle-card electric" data-category="electrico" data-fuel="electrico">
+                    <div class="vehicle-badge electric">100% Eléctrico</div>
+                    <div class="vehicle-image">
+                        <img src="images/id3.png" alt="Volkswagen ID.3 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen ID.3</h3>
+                        <p class="vehicle-tagline">El compacto eléctrico</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-bolt"></i> Eléctrico</span>
+                            <span><i class="fas fa-road"></i> Hasta 557 km</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">28.500 €</span>
+                            <span class="price-note">*Con ayudas y financiación</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ID.4 -->
+                <article class="vehicle-card electric" data-category="electrico" data-fuel="electrico">
+                    <div class="vehicle-badge electric">100% Eléctrico</div>
+                    <div class="vehicle-image">
+                        <img src="images/id4.png" alt="Volkswagen ID.4 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen ID.4</h3>
+                        <p class="vehicle-tagline">El SUV eléctrico</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-bolt"></i> Eléctrico</span>
+                            <span><i class="fas fa-road"></i> Hasta 520 km</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">34.400 €</span>
+                            <span class="price-note">*Con ayudas MOVES III</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ID.7 -->
+                <article class="vehicle-card electric" data-category="electrico" data-fuel="electrico">
+                    <div class="vehicle-badge new">Nuevo</div>
+                    <div class="vehicle-image">
+                        <img src="images/id7.png" alt="Volkswagen ID.7 2024">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Volkswagen ID.7</h3>
+                        <p class="vehicle-tagline">La berlina del futuro</p>
+                        <div class="vehicle-specs">
+                            <span><i class="fas fa-bolt"></i> Eléctrico</span>
+                            <span><i class="fas fa-road"></i> Hasta 702 km</span>
+                        </div>
+                        <div class="vehicle-price">
+                            <span class="price-from">Desde</span>
+                            <span class="price-amount">58.470 €</span>
+                            <span class="price-note">*PVP recomendado</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <a href="index.html#contacto" class="btn btn-primary">Solicitar información</a>
+                            <a href="prueba-conduccion.html" class="btn btn-secondary">Prueba de conducción</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>¿Necesitas más información?</h2>
+                    <p>Nuestro equipo de asesores comerciales está disponible para ayudarte a encontrar el Volkswagen
+                        perfecto para ti.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="tel:622309997" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i> Llámanos: 622 309 997
+                    </a>
+                    <a href="https://wa.me/34622309997" class="btn btn-secondary btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Volkswagen Sevilla - Utrewal. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Subir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34622309997" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

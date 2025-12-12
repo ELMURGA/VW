@@ -1,0 +1,174 @@
+# PROMPT PARA CLAUDE 4.5 / CHATGPT - PROYECTO VW SEVILLA
+
+---
+
+Actúa como un desarrollador senior front-end + diseñador UX que debe generar una nueva versión completa, visual y animada del sitio web del concesionario Volkswagen Sevilla (Utrewal) a partir del contenido y estructura ya disponible. No inventes nada: usa sólo la información real proporcionada en el contexto adjunto (contactos, precios, modelos, enlaces, logos, textos). Si algún campo técnico falta (por ejemplo potencia exacta donde no hay dato en el contexto), marca el campo como PENDIENTE_VERIFICAR y no rellenes con suposiciones. Entrega todos los archivos listos para producción (HTML semántico, CSS modular o SCSS, JS modular, assets manifest) y una explicación breve de decisiones de diseño y una lista de comprobación para revisión y pruebas.
+
+Contexto oficial a usar (no pedir web): usar el contenido del fichero CONTEXTO_PROYECTO_VW.txt que incluye la estructura de páginas, contactos, redes y precios de modelos. Usa exactamente los datos y enlaces que contiene.
+
+---
+
+## Reglas absolutas (leer y obedecer)
+
+1. **No inventar datos.** Usa sólo las direcciones, teléfonos, correos, precios, nombres de modelos y enlaces que aparecen en CONTEXTO_PROYECTO_VW.txt. Si algo no está en ese contexto, deja una marca PENDIENTE_VERIFICAR y explica dónde falta.
+
+2. **Mantener el botón/widget de accesibilidad EXACTAMENTE** con las opciones que el sitio original incluye (tamaño de fuente, alto contraste, reducir animaciones). Implementa control prefers-reduced-motion y persistencia en localStorage.
+
+3. **Incluir todos los enlaces de redes sociales, WhatsApp, correos y teléfonos** tal como aparecen en el contexto (no cambiarlos).
+
+4. **Usar los logos indicados:** logo VW (SVG proporcionado), más logos de Audi y Skoda en footer. Incluye la ruta/archivo y el SVG inline para VW (proporcionado en el contexto).
+
+5. **Los precios publicados deben coincidir** con la tabla de coches-nuevos y promociones del contexto (por ejemplo Polo 16.900€, ID.4 34.400€, etc.). Coloca una nota legal visible que indique "Precios orientativos. Incluyen IVA." como en tu contexto.
+
+6. **Todas las imágenes de vehículos** referenciar los archivos que ya tienes (polo.png, golf.png, tcross.png, taigo.png, troc.png, tiguan.png, passat.png, arteon.png, id3.png, id4.png, id7.png) y añadir un manifest de assets. No sustituir ni crear otros nombres de fichero.
+
+7. **SEO y accesibilidad:** meta tags, alt reales en imágenes, aria-* correctos en controles interactivos, y sitemap.xml + robots.txt básico.
+
+8. **Animaciones:** modernas y suaves (framer-like), pero con opción en widget de accesibilidad para reducirlas. Usa micro-interactions: hover, focus, reveal-on-scroll, transiciones de cards y un slider hero. Sigue el diseño glassmorphism y gradientes descritos.
+
+---
+
+## Contenido y páginas a generar (usar la estructura del contexto)
+
+Genera código completo y ejemplos para las siguientes páginas (usable en un deploy estático):
+
+- **index.html** — Home (Header, Slider hero con 3 slides: Gama completa, Eléctricos ID, Ofertas; Modelos destacados; Gama ID; Servicios; Vehículos de ocasión; Postventa; Contacto con mapas de ambas ubicaciones; Footer con logos).
+
+- **coches-nuevos.html** — Catálogo (filtros, grid de 11 modelos con precios según la lista). Incluye filtros funcionales en JavaScript que no requieren backend.
+
+- **todos-vehiculos.html** — Categorías + comparativa + estadísticas (+500 vehículos, 35 modelos, 2 concesionarios).
+
+- **promociones.html** — Ofertas con la tabla de precios antes/ahora y cuotas. Aviso legal.
+
+- **prueba-conduccion.html** — Formulario completo y tarjetas de ubicaciones; lista de modelos más solicitados.
+
+- **cita-taller.html** — Formulario de cita taller, lista de servicios y tarjetas de talleres con teléfono/email/hora.
+
+Para cada página entrega:
+- HTML semántico (correcto uso de header, main, section, article, nav, footer).
+- CSS modular (variables CSS como --vw-blue, --vw-electric, glassmorphism, breakpoints). Usa la paleta declarada.
+- JS modular (script.js) con funcionalidades listadas en el contexto: sticky header, slider hero, filtros, forms validation, accessibility widget, cookies banner, smooth scroll, reveal-on-scroll.
+
+---
+
+## Datos exactos que debes usar (extraer del contexto)
+
+### Volkswagen Utrera
+- Dirección: Ctra. Écija - Jerez, 15 - 41710 Utrera (Sevilla)
+- Teléfono General/Ventas: 622 309 997
+- Email Ventas: jtristancho@utrewal.volkswagen.es
+- Teléfono Taller: 955 860 606
+- Email Taller: atc@utrewal.volkswagen.es
+- Email Recambios: recambios@03407.volkswagen.es
+- Teléfono Chapa/Pintura: 648 411 263
+- Email Chapa/Pintura: carroceria@utrewal.volkswagen.es
+
+### Volkswagen Alcalá de Guadaíra
+- Dirección: Autovía Sevilla - Málaga A92 Km 11 (margen derecho) Salida A12 - 41500 Alcalá de Guadaíra (Sevilla)
+- Teléfono General/Ventas: 622 309 997
+- Teléfono Ventas: 955 616 464
+- Email Ventas: csanmartin@utrewal.volkswagen.es
+- Teléfono Taller: 955 616 464
+- Email Taller: atc@utrewal.volkswagen.es
+- Email Recambios: recambios@03407.volkswagen.es
+
+### Redes sociales & WhatsApp (usar links idénticos):
+- Facebook: https://www.facebook.com/UtrewalSevilla
+- Instagram: https://www.instagram.com/utrewal_sa
+- Twitter/X: https://twitter.com/utrewal_sa
+- WhatsApp: https://wa.me/34622309997
+
+### Lista de modelos con precios (usar exactamente):
+
+| Modelo   | Tipo              | Precio desde |
+|----------|-------------------|--------------|
+| Polo     | Urbano            | 16.900€      |
+| Golf     | Compacto          | 25.480€      |
+| T-Cross  | SUV Urbano        | 20.300€      |
+| Taigo    | Coupé SUV         | 19.900€      |
+| T-Roc    | SUV Compacto      | 23.700€      |
+| Tiguan   | SUV Mediano       | 34.300€      |
+| Passat   | Familiar          | 43.200€      |
+| Arteon   | Premium           | 54.800€      |
+| ID.3     | Eléctrico         | 28.500€      |
+| ID.4     | SUV Eléctrico     | 34.400€      |
+| ID.7     | Berlina Eléctrica | 58.470€      |
+
+### Promociones (tabla antes / ahora / cuota):
+
+| Modelo       | Precio antes | Precio ahora | Cuota/mes    |
+|--------------|--------------|--------------|--------------|
+| Taigo        | 24.400€      | 19.900€      | 215€         |
+| T-Cross MÁS  | 23.500€      | 20.300€      | 200€         |
+| T-Roc MÁS    | 30.594€      | 23.700€      | 235€         |
+| Golf 2026    | 31.500€      | 26.400€      | 275€         |
+| Tiguan       | 39.180€      | 34.300€      | 350€         |
+| ID.3         | 42.260€      | 28.500€      | 150€ My Way  |
+| ID.4         | 48.015€      | 34.400€      | 250€ My Way  |
+| ID.7         | 65.000€      | 58.470€      | 390€ My Way  |
+
+### Badges y autonomías de la gama ID:
+- ID.3: 557 km
+- ID.4: 520 km
+- ID.7: 702 km
+
+### Assets existentes (nombres exactos de imágenes):
+- polo.png
+- golf.png
+- tcross.png
+- taigo.png
+- troc.png
+- tiguan.png
+- passat.png
+- arteon.png
+- id3.png
+- id4.png
+- id7.png
+
+---
+
+## Requisitos UX / Visuales / Interacciones
+
+- **Diseño premium:** glassmorphism, gradientes suaves y tipografía Inter (Google Fonts).
+- **Hero slider** con 3 slides, autoplay, controlar con aria-live para accesibilidad y pausable por usuario.
+- **Cards de producto:** image (archivo proporcionado), nombre, badges, 3 specs (si no están en contexto, poner PENDIENTE_VERIFICAR), precio, botones: Solicitar info (abre modal), Solicitar prueba (link a prueba-conduccion.html) y WhatsApp.
+- **Animaciones:** reveal-on-scroll (intersection observer), micro-animations en hover, transiciones en modal. Proveer clases utilitarias (.is-animated, .reveal, .reduced-motion), y respetar preferencia de reducir animaciones.
+- **Mobile-first y performance:** imágenes optimizadas (webp fallback), lazy-loading, CSS crítico inline, code-splitting mínimo.
+
+---
+
+## Accesibilidad (WCAG) — implementar y documentar
+
+- Todos los controles con contraste mínimo según WCAG AA (explicar cómo se consigue con variables).
+- aria roles en modales, sliders y formularios.
+- Control de tamaño de fuente y alto contraste via widget (persistente en localStorage).
+
+---
+
+## Output que quiero que generes
+
+1. **Ficha resumida (1 página)** con: estructura de archivos, lista de assets con nombres exactos, y los endpoints/URLs que deben quedar enlazados (Facebook, Instagram, WhatsApp, emails, teléfonos).
+
+2. **Bloque ejemplo de código** para la card de un vehículo (HTML + CSS variables + JS pequeño) que respete los datos del contexto y muestre precio, badges y enlaces de contacto (WhatsApp, llamar).
+
+3. **Checklist de QA / pre-deploy** (SEO, accesibilidad, performance, pruebas cross-browser y mobile).
+
+4. **Notas finales** señalando qué datos deben verificarse fuera del contexto (especificaciones técnicas que falten — devolver un listado PENDIENTE_VERIFICAR) y recomendaciones opcionales (integración backend, CMS, sistema de reservas real-time).
+
+---
+
+## Extra: formato y tono
+
+- Entrega todo en español.
+- Tono profesional, claro y directo — enfocado a un equipo dev + diseñador.
+- Emplea listas concretas para que un dev pueda comenzar a implementar inmediatamente.
+
+---
+
+## Fuentes autorizadas
+
+NO realices búsquedas externas salvo que te lo pidan expresamente después de revisar este contenido. Toda la información obligatoria debe salir del CONTEXTO_PROYECTO_VW.txt.
+
+---
+
+# FIN DEL PROMPT

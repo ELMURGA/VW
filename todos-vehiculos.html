@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Todos los vehículos Volkswagen disponibles en Sevilla. Coches nuevos, seminuevos y de ocasión. SUV, compactos, berlinas, eléctricos y comerciales.">
+    <meta name="keywords"
+        content="Volkswagen, coches, vehículos, nuevos, ocasión, seminuevos, Sevilla, SUV, eléctricos, comerciales">
+    <title>Todos los Vehículos | Volkswagen Sevilla Utrewal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-bar">
+                    <a href="tel:622309997" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>622 309 997</span>
+                    </a>
+                    <a href="mailto:jtristancho@utrewal.volkswagen.es" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jtristancho@utrewal.volkswagen.es</span>
+                    </a>
+                    <div class="social-links-top">
+                        <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="X"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <svg class="vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4" />
+                        <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5" />
+                        <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5" />
+                    </svg>
+                    <span class="brand-text">Volkswagen Sevilla</span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="coches-nuevos.html" class="nav-link">Coches Nuevos</a></li>
+                    <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="cita-taller.html" class="nav-link">Cita Taller</a></li>
+                    <li><a href="prueba-conduccion.html" class="nav-link">Prueba</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Inicio</a>
+                    <span>/</span>
+                    <span>Todos los Vehículos</span>
+                </nav>
+                <h1>Todos los Tipos de Vehículos</h1>
+                <p>Encuentra el Volkswagen perfecto para ti. Nuevos, seminuevos y de ocasión disponibles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explora por Categoría</h2>
+                <p>Tenemos el vehículo ideal para cada necesidad</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Turismos -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Turismos</h3>
+                    <p>Compactos y berlinas para el día a día</p>
+                    <ul class="category-models">
+                        <li>Polo</li>
+                        <li>Golf</li>
+                        <li>Passat</li>
+                        <li>Arteon</li>
+                    </ul>
+                    <a href="coches-nuevos.html" class="btn btn-outline">Ver modelos</a>
+                </div>
+
+                <!-- SUV -->
+                <div class="category-card featured">
+                    <div class="category-badge">Más vendido</div>
+                    <div class="category-icon">
+                        <i class="fas fa-truck-monster"></i>
+                    </div>
+                    <h3>SUV & Crossover</h3>
+                    <p>Versatilidad y espacio para toda la familia</p>
+                    <ul class="category-models">
+                        <li>T-Cross</li>
+                        <li>Taigo</li>
+                        <li>T-Roc</li>
+                        <li>Tiguan</li>
+                        <li>Touareg</li>
+                    </ul>
+                    <a href="coches-nuevos.html" class="btn btn-primary">Ver modelos</a>
+                </div>
+
+                <!-- Eléctricos -->
+                <div class="category-card electric">
+                    <div class="category-badge electric">Cero emisiones</div>
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>100% Eléctricos</h3>
+                    <p>La movilidad del futuro, hoy</p>
+                    <ul class="category-models">
+                        <li>ID.3</li>
+                        <li>ID.4</li>
+                        <li>ID.5</li>
+                        <li>ID.7</li>
+                        <li>ID. Buzz</li>
+                    </ul>
+                    <a href="coches-nuevos.html" class="btn btn-electric">Ver modelos</a>
+                </div>
+
+                <!-- Comerciales -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Vehículos Comerciales</h3>
+                    <p>Soluciones para tu negocio</p>
+                    <ul class="category-models">
+                        <li>Caddy</li>
+                        <li>Transporter</li>
+                        <li>Caravelle</li>
+                        <li>Multivan</li>
+                        <li>Crafter</li>
+                    </ul>
+                    <a href="index.html#contacto" class="btn btn-outline">Consultar</a>
+                </div>
+
+                <!-- Monovolúmenes -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Monovolúmenes</h3>
+                    <p>Máximo espacio y confort</p>
+                    <ul class="category-models">
+                        <li>Touran</li>
+                        <li>Sharan</li>
+                    </ul>
+                    <a href="index.html#contacto" class="btn btn-outline">Consultar</a>
+                </div>
+
+                <!-- Ocasión -->
+                <div class="category-card occasion">
+                    <div class="category-badge occasion">Das WeltAuto</div>
+                    <div class="category-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Vehículos de Ocasión</h3>
+                    <p>Revisados y garantizados</p>
+                    <ul class="category-models">
+                        <li>Garantía 24 meses</li>
+                        <li>Historial verificado</li>
+                        <li>Revisión 110 puntos</li>
+                        <li>Financiación flexible</li>
+                    </ul>
+                    <a href="index.html#ocasion" class="btn btn-outline">Ver stock</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">+500</span>
+                    <span class="stat-label">Vehículos disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">Modelos en gama</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Concesionarios</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">+25</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Comparison -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compara Nuestros Modelos</h2>
+                <p>Encuentra las diferencias entre los modelos más populares</p>
+            </div>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Tipo</th>
+                            <th>Motor</th>
+                            <th>Potencia</th>
+                            <th>Desde</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Polo</strong></td>
+                            <td>Compacto</td>
+                            <td>Gasolina</td>
+                            <td>80-207 CV</td>
+                            <td><strong>16.900 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Golf</strong></td>
+                            <td>Compacto</td>
+                            <td>Gasolina/Híbrido</td>
+                            <td>116-333 CV</td>
+                            <td><strong>25.480 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>T-Cross</strong></td>
+                            <td>SUV Urbano</td>
+                            <td>Gasolina</td>
+                            <td>95-150 CV</td>
+                            <td><strong>20.300 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>T-Roc</strong></td>
+                            <td>SUV Compacto</td>
+                            <td>Gasolina/Híbrido</td>
+                            <td>110-300 CV</td>
+                            <td><strong>23.700 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tiguan</strong></td>
+                            <td>SUV Mediano</td>
+                            <td>Gasolina/PHEV</td>
+                            <td>130-272 CV</td>
+                            <td><strong>34.300 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr class="electric-row">
+                            <td><strong>ID.3</strong></td>
+                            <td>Eléctrico</td>
+                            <td>Eléctrico</td>
+                            <td>204 CV</td>
+                            <td><strong>28.500 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                        <tr class="electric-row">
+                            <td><strong>ID.4</strong></td>
+                            <td>SUV Eléctrico</td>
+                            <td>Eléctrico</td>
+                            <td>286 CV</td>
+                            <td><strong>34.400 €</strong></td>
+                            <td><a href="index.html#contacto" class="btn btn-sm">Info</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-highlight">
+        <div class="container">
+            <div class="services-highlight-grid">
+                <div class="service-highlight-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Financiación a medida</h3>
+                    <p>Opciones de financiación My Way, lineal y renting adaptadas a tus necesidades.</p>
+                </div>
+                <div class="service-highlight-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Tasamos tu coche</h3>
+                    <p>Te ofrecemos la mejor valoración por tu vehículo actual como parte de pago.</p>
+                </div>
+                <div class="service-highlight-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Entrega a domicilio</h3>
+                    <p>Llevamos tu nuevo Volkswagen directamente a tu casa sin coste adicional.</p>
+                </div>
+                <div class="service-highlight-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garantía oficial</h3>
+                    <p>Todos nuestros vehículos nuevos con 2 años de garantía Volkswagen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Visítanos en nuestros concesionarios</h2>
+                    <p>Ven a conocer toda nuestra gama en persona. Te esperamos en Utrera y Alcalá de Guadaíra.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="index.html#contacto" class="btn btn-primary btn-lg">
+                        <i class="fas fa-map-marker-alt"></i> Ver ubicaciones
+                    </a>
+                    <a href="prueba-conduccion.html" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-car"></i> Solicitar prueba
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Volkswagen Sevilla - Utrewal. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Subir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34622309997" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

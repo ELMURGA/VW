@@ -1,0 +1,27 @@
+# Robots.txt para Volkswagen Sevilla Utrewal
+# https://www.utrewal.volkswagen.es/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.utrewal.volkswagen.es/sitemap.xml
+
+# Directorios a excluir (si existieran)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Permitir crawlers de imágenes
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Permitir crawlers de redes sociales
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

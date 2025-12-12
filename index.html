@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Volkswagen Sevilla - Concesionario oficial Volkswagen en Utrera y Alcalá de Guadaíra. Venta de coches nuevos y de ocasión, taller y postventa.">
+    <meta name="keywords"
+        content="Volkswagen, Sevilla, Utrera, Alcalá de Guadaíra, concesionario, coches, vehículos eléctricos, ID.3, ID.4, Golf, Tiguan, T-Roc">
+    <title>Volkswagen Sevilla | Concesionario Oficial Utrewal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-text">
+                <h3>Utilizamos cookies</h3>
+                <p>Utilizamos cookies propias y de terceros para analizar nuestros servicios y mostrarte publicidad
+                    relacionada con tus preferencias en base a un perfil elaborado a partir de tus hábitos de
+                    navegación.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" onclick="acceptCookies()">Aceptar todas</button>
+                <button class="cookie-btn settings" onclick="openCookieSettings()">Configurar</button>
+                <button class="cookie-btn reject" onclick="rejectCookies()">Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-bar">
+                    <a href="tel:622309997" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>622 309 997</span>
+                    </a>
+                    <a href="mailto:jtristancho@utrewal.volkswagen.es" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jtristancho@utrewal.volkswagen.es</span>
+                    </a>
+                    <div class="social-links-top">
+                        <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <svg class="vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4" />
+                        <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5" />
+                        <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5" />
+                    </svg>
+                    <span class="brand-text">Volkswagen Sevilla</span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="coches-nuevos.html" class="nav-link">Coches Nuevos</a></li>
+                    <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="cita-taller.html" class="nav-link">Cita Taller</a></li>
+                    <li><a href="prueba-conduccion.html" class="nav-link">Prueba</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-slider">
+            <div class="hero-slide active" data-slide="1">
+                <div class="hero-bg"
+                    style="background: linear-gradient(135deg, #001e50 0%, #00437a 50%, #001e50 100%);"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-badge">Nuevo</span>
+                        <h1>Volkswagen ID.7</h1>
+                        <p>El futuro de la movilidad eléctrica. Hasta 702 km de autonomía.</p>
+                        <div class="hero-buttons">
+                            <a href="#modelos" class="btn btn-primary">Descubrir</a>
+                            <a href="#contacto" class="btn btn-secondary">Solicitar prueba</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/id7.png" alt="Volkswagen ID.7">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-bg"
+                    style="background: linear-gradient(135deg, #1a1a1a 0%, #333333 50%, #1a1a1a 100%);"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-badge">Deportivo</span>
+                        <h1>Nuevo Golf GTI</h1>
+                        <p>Pura adrenalina. 265 CV de potencia para disfrutar al máximo.</p>
+                        <div class="hero-buttons">
+                            <a href="#modelos" class="btn btn-primary">Ver más</a>
+                            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/golf.png" alt="Volkswagen Golf GTI">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="3">
+                <div class="hero-bg"
+                    style="background: linear-gradient(135deg, #002851 0%, #004d8c 50%, #002851 100%);"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-badge">SUV</span>
+                        <h1>Tiguan 2024</h1>
+                        <p>Versatilidad y elegancia. El SUV más vendido de Europa.</p>
+                        <div class="hero-buttons">
+                            <a href="#modelos" class="btn btn-primary">Explorar</a>
+                            <a href="#contacto" class="btn btn-secondary">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/tiguan.png" alt="Volkswagen Tiguan 2024">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <button class="dot active" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+            </div>
+            <button class="slider-btn next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models" id="modelos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Catálogo</span>
+                <h2>Nuestros Modelos</h2>
+                <p>Descubre toda la gama Volkswagen disponible en nuestros concesionarios</p>
+            </div>
+            <div class="model-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="compacto">Compactos</button>
+                <button class="filter-btn" data-filter="electrico">Eléctricos</button>
+                <button class="filter-btn" data-filter="familiar">Familiares</button>
+            </div>
+            <div class="models-grid">
+                <!-- Polo -->
+                <div class="model-card" data-category="compacto">
+                    <div class="model-image">
+                        <img src="images/polo.png" alt="Volkswagen Polo">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Polo</h3>
+                        <p>El urbano por excelencia</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 80-207 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>19.800 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- Golf -->
+                <div class="model-card" data-category="compacto">
+                    <div class="model-image">
+                        <img src="images/golf.png" alt="Volkswagen Golf">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Golf</h3>
+                        <p>El icono reinventado</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 115-272 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>31.200 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- T-Cross -->
+                <div class="model-card" data-category="suv">
+                    <div class="model-image">
+                        <img src="images/tcross.png" alt="Volkswagen T-Cross">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>T-Cross</h3>
+                        <p>El crossover urbano</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 95-150 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>25.900 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- T-Roc -->
+                <div class="model-card" data-category="suv">
+                    <div class="model-image">
+                        <img src="images/troc.png" alt="Volkswagen T-Roc">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>T-Roc</h3>
+                        <p>Diseño que destaca</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 110-300 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>32.500 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- Tiguan -->
+                <div class="model-card" data-category="suv">
+                    <div class="model-image">
+                        <img src="images/tiguan.png" alt="Volkswagen Tiguan">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Tiguan</h3>
+                        <p>El SUV más versátil</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / Híbrido</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 150-245 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>38.900 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- Taigo -->
+                <div class="model-card" data-category="suv">
+                    <div class="model-image">
+                        <img src="images/taigo.png" alt="Volkswagen Taigo">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Taigo</h3>
+                        <p>El coupé SUV</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 95-150 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>26.400 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- Passat -->
+                <div class="model-card" data-category="familiar">
+                    <div class="model-image">
+                        <img src="images/passat.png" alt="Volkswagen Passat">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Passat</h3>
+                        <p>Elegancia ejecutiva</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / PHEV</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 150-272 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>43.200 €</strong></div>
+                    </div>
+                </div>
+
+                <!-- Arteon -->
+                <div class="model-card" data-category="familiar">
+                    <div class="model-image">
+                        <img src="images/arteon.png" alt="Volkswagen Arteon">
+                        <div class="model-overlay">
+                            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Arteon</h3>
+                        <p>Gran turismo premium</p>
+                        <div class="model-specs">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina / PHEV</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 190-320 CV</span>
+                        </div>
+                        <div class="model-price">Desde <strong>54.800 €</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electric Section -->
+    <section class="electric" id="electricos">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-badge">Cero Emisiones</span>
+                <h2>Familia ID. 100% Eléctrica</h2>
+                <p>El futuro de la movilidad ya está aquí</p>
+            </div>
+            <div class="electric-grid">
+                <!-- ID.3 -->
+                <div class="electric-card">
+                    <div class="electric-image">
+                        <div class="electric-badge">100% Eléctrico</div>
+                        <img src="images/id3.png" alt="ID.3">
+                    </div>
+                    <div class="electric-info">
+                        <h3>ID.3</h3>
+                        <p>El compacto eléctrico</p>
+                        <div class="electric-specs">
+                            <div class="spec">
+                                <span class="spec-value">557 km</span>
+                                <span class="spec-label">Autonomía</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">204 CV</span>
+                                <span class="spec-label">Potencia</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">170 kW</span>
+                                <span class="spec-label">Carga rápida</span>
+                            </div>
+                        </div>
+                        <a href="#contacto" class="btn btn-electric">Descubrir ID.3</a>
+                    </div>
+                </div>
+
+                <!-- ID.4 -->
+                <div class="electric-card">
+                    <div class="electric-image">
+                        <div class="electric-badge">100% Eléctrico</div>
+                        <img src="images/id4.png" alt="ID.4">
+                    </div>
+                    <div class="electric-info">
+                        <h3>ID.4</h3>
+                        <p>El SUV eléctrico</p>
+                        <div class="electric-specs">
+                            <div class="spec">
+                                <span class="spec-value">520 km</span>
+                                <span class="spec-label">Autonomía</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">286 CV</span>
+                                <span class="spec-label">Potencia</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">135 kW</span>
+                                <span class="spec-label">Carga rápida</span>
+                            </div>
+                        </div>
+                        <a href="#contacto" class="btn btn-electric">Descubrir ID.4</a>
+                    </div>
+                </div>
+
+                <!-- ID.7 -->
+                <div class="electric-card featured">
+                    <div class="electric-image">
+                        <div class="electric-badge">Nuevo</div>
+                        <img src="images/id7.png" alt="ID.7">
+                    </div>
+                    <div class="electric-info">
+                        <h3>ID.7</h3>
+                        <p>La berlina del futuro</p>
+                        <div class="electric-specs">
+                            <div class="spec">
+                                <span class="spec-value">702 km</span>
+                                <span class="spec-label">Autonomía</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">340 CV</span>
+                                <span class="spec-label">Potencia GTX</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">200 kW</span>
+                                <span class="spec-label">Carga rápida</span>
+                            </div>
+                        </div>
+                        <a href="#contacto" class="btn btn-electric">Descubrir ID.7</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Servicios</span>
+                <h2>Todo lo que necesitas</h2>
+                <p>Servicios completos para ti y tu Volkswagen</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Venta de vehículos</h3>
+                    <p>Toda la gama Volkswagen nueva y de ocasión con las mejores condiciones de financiación.</p>
+                    <a href="#contacto" class="service-link">Más información <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Taller oficial</h3>
+                    <p>Mecánica, mantenimiento y revisiones con técnicos certificados Volkswagen.</p>
+                    <a href="#postventa" class="service-link">Pedir cita <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>Chapa y pintura</h3>
+                    <p>Reparación de carrocería con pintura original Volkswagen.</p>
+                    <a href="#contacto" class="service-link">Solicitar presupuesto <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Recambios originales</h3>
+                    <p>Piezas y accesorios originales Volkswagen con garantía oficial.</p>
+                    <a href="#contacto" class="service-link">Consultar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>Instalación Wallbox</h3>
+                    <p>Te ayudamos a instalar tu punto de carga para vehículos eléctricos.</p>
+                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Financiación</h3>
+                    <p>Condiciones especiales de financiación adaptadas a tus necesidades.</p>
+                    <a href="#contacto" class="service-link">Calcular cuota <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Used Cars Section -->
+    <section class="used-cars" id="ocasion">
+        <div class="container">
+            <div class="used-content">
+                <div class="used-text">
+                    <span class="section-badge">Das WeltAuto</span>
+                    <h2>Vehículos de Ocasión</h2>
+                    <p>Vehículos revisados y garantizados por Volkswagen. Todos nuestros coches de segunda mano pasan
+                        por un exhaustivo control de calidad.</p>
+                    <ul class="used-features">
+                        <li><i class="fas fa-check"></i> Garantía de 24 meses</li>
+                        <li><i class="fas fa-check"></i> Historial verificado</li>
+                        <li><i class="fas fa-check"></i> Revisión de 110 puntos</li>
+                        <li><i class="fas fa-check"></i> Financiación a medida</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Ver stock disponible</a>
+                </div>
+                <div class="used-image">
+                    <div class="used-badge">Das WeltAuto</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- After Sales Section -->
+    <section class="after-sales" id="postventa">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Postventa</span>
+                <h2>Cuidamos de tu Volkswagen</h2>
+                <p>Servicio postventa oficial con profesionales certificados</p>
+            </div>
+            <div class="after-sales-grid">
+                <div class="after-sales-card">
+                    <div class="card-number">01</div>
+                    <h3>Revisiones</h3>
+                    <p>Mantén tu vehículo en perfectas condiciones con nuestras revisiones oficiales.</p>
+                    <div class="card-contact">
+                        <a href="tel:955860606"><i class="fas fa-phone"></i> 955 860 606</a>
+                    </div>
+                </div>
+
+                <div class="after-sales-card">
+                    <div class="card-number">02</div>
+                    <h3>Mantenimiento</h3>
+                    <p>Cambios de aceite, filtros, frenos y todo lo que necesita tu coche.</p>
+                    <div class="card-contact">
+                        <a href="mailto:atc@utrewal.volkswagen.es"><i class="fas fa-envelope"></i>
+                            atc@utrewal.volkswagen.es</a>
+                    </div>
+                </div>
+
+                <div class="after-sales-card">
+                    <div class="card-number">03</div>
+                    <h3>Reparaciones</h3>
+                    <p>Diagnóstico y reparación con equipos de última generación.</p>
+                    <div class="card-contact">
+                        <a href="tel:648411263"><i class="fas fa-phone"></i> 648 411 263</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-badge">Contacto</span>
+                <h2>¿Te ayudamos?</h2>
+                <p>Estamos aquí para resolver todas tus dudas</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona...</option>
+                                    <option value="ventas">Información de ventas</option>
+                                    <option value="taller">Cita taller</option>
+                                    <option value="prueba">Solicitar prueba</option>
+                                    <option value="ocasion">Vehículos de ocasión</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">He leído y acepto la <a href="#">política de privacidad</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info-wrapper">
+                    <div class="contact-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Nuestras ubicaciones</h3>
+                        <div class="location">
+                            <h4>Volkswagen Utrera</h4>
+                            <p>Ctra. Écija - Jerez, 15<br>41710 Utrera (Sevilla)</p>
+                            <a href="tel:622309997" class="location-phone"><i class="fas fa-phone"></i> 622 309 997</a>
+                        </div>
+                        <div class="location">
+                            <h4>Volkswagen Alcalá de Guadaíra</h4>
+                            <p>Autovía Sevilla - Málaga A92 Km 11<br>41500 Alcalá de Guadaíra (Sevilla)</p>
+                            <a href="tel:955616464" class="location-phone"><i class="fas fa-phone"></i> 955 616 464</a>
+                        </div>
+                    </div>
+                    <div class="contact-card social">
+                        <h3><i class="fas fa-share-alt"></i> Síguenos</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/UtrewalSevilla" target="_blank"
+                                class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/utrewal_sa/" target="_blank"
+                                class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://twitter.com/utrewal_sa" target="_blank" class="social-link twitter">
+                                <i class="fab fa-x-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://wa.me/34622309997" target="_blank" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Utrera Location -->
+                    <div class="footer-location">
+                        <div class="footer-brands">
+                            <!-- VW Logo -->
+                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
+                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <!-- VW Commercial Vehicles Logo -->
+                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
+                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <!-- Audi Logo (Four Rings) -->
+                            <svg class="footer-brand-logo audi" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="45" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="70" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="95" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <!-- Skoda Logo -->
+                            <svg class="footer-brand-logo skoda" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="25" cy="25" r="23" fill="none" stroke="currentColor" stroke-width="2" />
+                                <path d="M15 18 L25 12 L35 18 L35 32 L25 38 L15 32 Z" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M20 22 L30 22 M20 28 L30 28" stroke="currentColor" stroke-width="1.5" />
+                            </svg>
+                        </div>
+                        <h3 class="footer-location-title">Utrera</h3>
+                        <p class="footer-address">Ctra. Écija - Jerez, 15 - 41710 Utrera (Sevilla)</p>
+                        <div class="footer-contact">
+                            <a href="tel:622309997"><i class="fas fa-phone"></i> 622 309 997</a>
+                            <a href="mailto:jtristancho@utrewal.volkswagen.es"><i class="fas fa-envelope"></i>
+                                jtristancho@utrewal.volkswagen.es</a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="Twitter"><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Alcalá Location -->
+                    <div class="footer-location">
+                        <div class="footer-brands right">
+                            <!-- VW Logo -->
+                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
+                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                        </div>
+                        <h3 class="footer-location-title">Alcalá de Guadaira</h3>
+                        <p class="footer-address">Autovía Sevilla - Málaga A92 Km 11 (margen derecho)<br>Salida A12 -
+                            41500 Alcalá de Guadaira (Sevilla)</p>
+                        <div class="footer-contact">
+                            <a href="tel:622309997"><i class="fas fa-phone"></i> 622 309 997</a>
+                            <a href="mailto:csanmartin@utrewal.volkswagen.es"><i class="fas fa-envelope"></i>
+                                csanmartin@utrewal.volkswagen.es</a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="Twitter"><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Volkswagen Sevilla - Utrewal. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Subir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Accessibility Widget -->
+    <div class="accessibility-widget" id="accessibility-widget">
+        <button class="accessibility-toggle" id="accessibility-toggle" aria-label="Opciones de accesibilidad">
+            <i class="fas fa-universal-access"></i>
+        </button>
+        <div class="accessibility-panel" id="accessibility-panel">
+            <div class="accessibility-header">
+                <h3>Accesibilidad</h3>
+                <button class="accessibility-close" id="accessibility-close" aria-label="Cerrar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="accessibility-options">
+                <div class="accessibility-option">
+                    <span>Tamaño de texto</span>
+                    <div class="option-controls">
+                        <button class="size-btn" data-action="decrease">A-</button>
+                        <button class="size-btn" data-action="reset">A</button>
+                        <button class="size-btn" data-action="increase">A+</button>
+                    </div>
+                </div>
+                <div class="accessibility-option">
+                    <span>Alto contraste</span>
+                    <label class="switch">
+                        <input type="checkbox" id="high-contrast">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="accessibility-option">
+                    <span>Escala de grises</span>
+                    <label class="switch">
+                        <input type="checkbox" id="grayscale">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="accessibility-option">
+                    <span>Enlaces subrayados</span>
+                    <label class="switch">
+                        <input type="checkbox" id="underline-links">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="accessibility-option">
+                    <span>Pausar animaciones</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pause-animations">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34622309997" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
