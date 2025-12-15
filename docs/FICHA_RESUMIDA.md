@@ -13,12 +13,17 @@
 ├── promociones.html             # Ofertas y financiación
 ├── prueba-conduccion.html       # Formulario de test drive
 ├── cita-taller.html             # Formulario de cita en taller
+├── quienes-somos.html           # Historia y presentación de Utrewal
+├── actualidad.html              # Noticias y eventos
+├── equipo.html                  # Departamentos y equipo
 ├── styles.css                   # Estilos CSS principales
 ├── script.js                    # JavaScript interactivo
 ├── sitemap.xml                  # Mapa del sitio para SEO
 ├── robots.txt                   # Directivas para crawlers
 │
-├── images/                      # Imágenes de vehículos
+├── images/                      # Imágenes de vehículos y logos
+│   ├── logo-vw.png
+│   ├── logo-skoda.png
 │   ├── polo.png
 │   ├── golf.png
 │   ├── tcross.png
@@ -101,17 +106,38 @@
 
 ---
 
-## 4. NAVEGACIÓN INTERNA
+## 4. NAVEGACIÓN INTERNA (Menú con Dropdowns)
 
-| Enlace Menú    | Archivo Destino           | Anchor (si aplica) |
-|----------------|---------------------------|---------------------|
-| Inicio         | index.html                | -                   |
-| Coches Nuevos  | coches-nuevos.html        | -                   |
-| Promociones    | promociones.html          | -                   |
-| Servicios      | index.html                | #servicios          |
-| Cita Taller    | cita-taller.html          | -                   |
-| Prueba         | prueba-conduccion.html    | -                   |
-| Contacto       | index.html                | #contacto           |
+### Menú Principal
+| Enlace Menú    | Tipo     | Archivo Destino           |
+|----------------|----------|---------------------------|
+| Inicio         | Enlace   | index.html                |
+| Vehículos      | Dropdown | -                         |
+| Nosotros       | Dropdown | -                         |
+| Servicios      | Dropdown | -                         |
+| Contacto       | Enlace   | index.html#contacto       |
+
+### Submenú: Vehículos
+| Enlace              | Archivo Destino           |
+|---------------------|---------------------------|
+| Coches Nuevos       | coches-nuevos.html        |
+| Todos los Vehículos | todos-vehiculos.html      |
+| Promociones         | promociones.html          |
+| Prueba de Conducción| prueba-conduccion.html    |
+
+### Submenú: Nosotros
+| Enlace              | Archivo Destino           |
+|---------------------|---------------------------|
+| Quiénes Somos       | quienes-somos.html        |
+| Actualidad          | actualidad.html           |
+| Equipo              | equipo.html               |
+
+### Submenú: Servicios
+| Enlace              | Archivo Destino           |
+|---------------------|---------------------------|
+| Cita Taller         | cita-taller.html          |
+| Postventa           | index.html#postventa      |
+| Todos los Servicios | index.html#servicios      |
 
 ---
 

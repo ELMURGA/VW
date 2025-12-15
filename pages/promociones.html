@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
@@ -46,13 +46,9 @@
         </div>
         <nav class="navbar">
             <div class="container">
-                <a href="index.html" class="logo">
-                    <svg class="vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4" />
-                        <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5" />
-                        <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5" />
-                    </svg>
-                    <span class="brand-text">Volkswagen Sevilla</span>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/logos/logo-vw.png" alt="Volkswagen" class="vw-logo-img">
+                    <span class="brand-text">Utrewal S.A.</span>
                 </a>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
                     <span></span>
@@ -60,13 +56,34 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="coches-nuevos.html" class="nav-link">Coches Nuevos</a></li>
-                    <li><a href="promociones.html" class="nav-link">Promociones</a></li>
-                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="cita-taller.html" class="nav-link">Cita Taller</a></li>
-                    <li><a href="prueba-conduccion.html" class="nav-link">Prueba</a></li>
-                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active">Vehículos <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="coches-nuevos.html">Coches Nuevos</a></li>
+                            <li><a href="todos-vehiculos.html">Todos los Vehículos</a></li>
+                            <li><a href="promociones.html">Promociones</a></li>
+                            <li><a href="prueba-conduccion.html">Prueba de Conducción</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Nosotros <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                            <li><a href="actualidad.html">Actualidad</a></li>
+                            <li><a href="equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cita-taller.html">Cita Taller</a></li>
+                            <li><a href="../index.html#postventa">Postventa</a></li>
+                            <li><a href="../index.html#servicios">Todos los Servicios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -78,7 +95,7 @@
         <div class="container">
             <div class="page-hero-content">
                 <nav class="breadcrumb">
-                    <a href="index.html">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                     <span>/</span>
                     <span>Promociones</span>
                 </nav>
@@ -114,10 +131,10 @@
                     </ul>
                     <p class="promo-conditions">*Precio con financiación Volkswagen Financial Services. Válido hasta
                         31/12/2025.</p>
-                    <a href="index.html#contacto" class="btn btn-primary btn-lg">Solicitar oferta</a>
+                    <a href="../index.html#contacto" class="btn btn-primary btn-lg">Solicitar oferta</a>
                 </div>
                 <div class="promo-banner-image">
-                    <img src="images/polo.png" alt="Volkswagen Polo Match">
+                    <img src="../assets/images/vehicles/polo.png" alt="Volkswagen Polo Match">
                 </div>
             </div>
         </div>
@@ -136,7 +153,7 @@
                 <article class="promo-card">
                     <div class="promo-card-badge">-4.500€</div>
                     <div class="promo-card-image">
-                        <img src="images/taigo.png" alt="Volkswagen Taigo">
+                        <img src="../assets/images/vehicles/taigo.png" alt="Volkswagen Taigo">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen Taigo</h3>
@@ -148,7 +165,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>215€/mes</strong>
                         </div>
-                        <a href="index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -156,7 +173,7 @@
                 <article class="promo-card">
                     <div class="promo-card-badge">Oferta</div>
                     <div class="promo-card-image">
-                        <img src="images/tcross.png" alt="Volkswagen T-Cross">
+                        <img src="../assets/images/vehicles/tcross.png" alt="Volkswagen T-Cross">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen T-Cross MÁS</h3>
@@ -168,7 +185,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>200€/mes</strong>
                         </div>
-                        <a href="index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -176,7 +193,7 @@
                 <article class="promo-card">
                     <div class="promo-card-badge hot">Hot</div>
                     <div class="promo-card-image">
-                        <img src="images/troc.png" alt="Volkswagen T-Roc">
+                        <img src="../assets/images/vehicles/troc.png" alt="Volkswagen T-Roc">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen T-Roc MÁS</h3>
@@ -188,7 +205,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>235€/mes</strong>
                         </div>
-                        <a href="index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -196,7 +213,7 @@
                 <article class="promo-card">
                     <div class="promo-card-badge">Nuevo</div>
                     <div class="promo-card-image">
-                        <img src="images/golf.png" alt="Volkswagen Golf">
+                        <img src="../assets/images/vehicles/golf.png" alt="Volkswagen Golf">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen Golf 2026</h3>
@@ -208,7 +225,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>275€/mes</strong>
                         </div>
-                        <a href="index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -216,7 +233,7 @@
                 <article class="promo-card featured">
                     <div class="promo-card-badge">Best Seller</div>
                     <div class="promo-card-image">
-                        <img src="images/tiguan.png" alt="Volkswagen Tiguan">
+                        <img src="../assets/images/vehicles/tiguan.png" alt="Volkswagen Tiguan">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen Tiguan</h3>
@@ -228,7 +245,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>350€/mes</strong>
                         </div>
-                        <a href="index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-primary btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -236,7 +253,7 @@
                 <article class="promo-card electric">
                     <div class="promo-card-badge electric">Eléctrico</div>
                     <div class="promo-card-image">
-                        <img src="images/id3.png" alt="Volkswagen ID.3">
+                        <img src="../assets/images/vehicles/id3.png" alt="Volkswagen ID.3">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen ID.3</h3>
@@ -248,7 +265,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>150€/mes</strong> My Way
                         </div>
-                        <a href="index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -256,7 +273,7 @@
                 <article class="promo-card electric">
                     <div class="promo-card-badge electric">MOVES III</div>
                     <div class="promo-card-image">
-                        <img src="images/id4.png" alt="Volkswagen ID.4">
+                        <img src="../assets/images/vehicles/id4.png" alt="Volkswagen ID.4">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen ID.4</h3>
@@ -268,7 +285,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>250€/mes</strong> My Way
                         </div>
-                        <a href="index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
                     </div>
                 </article>
 
@@ -276,7 +293,7 @@
                 <article class="promo-card electric">
                     <div class="promo-card-badge">Nuevo</div>
                     <div class="promo-card-image">
-                        <img src="images/id7.png" alt="Volkswagen ID.7">
+                        <img src="../assets/images/vehicles/id7.png" alt="Volkswagen ID.7">
                     </div>
                     <div class="promo-card-content">
                         <h3>Volkswagen ID.7 Tourer</h3>
@@ -288,7 +305,7 @@
                         <div class="promo-card-monthly">
                             o desde <strong>390€/mes</strong> My Way
                         </div>
-                        <a href="index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
+                        <a href="../index.html#contacto" class="btn btn-electric btn-full">Me interesa</a>
                     </div>
                 </article>
             </div>
@@ -387,13 +404,80 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Utrera Location -->
+                    <div class="footer-location">
+                        <div class="footer-brands">
+                            <img src="../assets/images/logos/logo-vw.png" alt="Volkswagen" class="footer-logo-img">
+                            <svg class="footer-brand-logo audi" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="45" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="70" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="95" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <img src="../assets/images/logos/logo-skoda.png" alt="Škoda" class="footer-logo-img skoda-logo">
+                        </div>
+                        <h3 class="footer-location-title">Utrera</h3>
+                        <p class="footer-address">Ctra. Écija - Jerez, 15 - 41710 Utrera (Sevilla)</p>
+                        <div class="footer-contact">
+                            <a href="tel:622309997"><i class="fas fa-phone"></i> 622 309 997</a>
+                            <a href="mailto:jtristancho@utrewal.volkswagen.es"><i class="fas fa-envelope"></i>
+                                jtristancho@utrewal.volkswagen.es</a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="Twitter"><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <!-- Alcalá Location -->
+                    <div class="footer-location">
+                        <div class="footer-brands right">
+                            <img src="../assets/images/logos/logo-vw.png" alt="Volkswagen" class="footer-logo-img">
+                            <svg class="footer-brand-logo audi" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="45" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="70" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="95" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            </svg>
+                            <img src="../assets/images/logos/logo-skoda.png" alt="Škoda" class="footer-logo-img skoda-logo">
+                        </div>
+                        <h3 class="footer-location-title">Alcalá de Guadaira</h3>
+                        <p class="footer-address">Autovía Sevilla - Málaga A92 Km 11 (margen derecho)<br>Salida A12 -
+                            41500 Alcalá de Guadaira (Sevilla)</p>
+                        <div class="footer-contact">
+                            <a href="tel:622309997"><i class="fas fa-phone"></i> 622 309 997</a>
+                            <a href="mailto:csanmartin@utrewal.volkswagen.es"><i class="fas fa-envelope"></i>
+                                csanmartin@utrewal.volkswagen.es</a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/UtrewalSevilla" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/utrewal_sa/" target="_blank" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/utrewal_sa" target="_blank" aria-label="Twitter"><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a href="https://wa.me/34622309997" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2024 Volkswagen Sevilla - Utrewal. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Utrewal S.A. - Concesionario Oficial Volkswagen. Todos los derechos reservados.</p>
                 <div class="footer-links">
-                    <a href="index.html">Inicio</a>
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Política de privacidad</a>
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="politica-privacidad-cookies.html">Política de Privacidad y Cookies</a>
+                    <a href="declaracion-accesibilidad.html">Declaración de Accesibilidad</a>
                 </div>
             </div>
         </div>
@@ -409,7 +493,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

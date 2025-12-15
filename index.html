@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -66,13 +66,9 @@
         </div>
         <nav class="navbar">
             <div class="container">
-                <a href="#" class="logo">
-                    <svg class="vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="4" />
-                        <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor" stroke-width="3.5" />
-                        <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="3.5" />
-                    </svg>
-                    <span class="brand-text">Volkswagen Sevilla</span>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logos/logo-vw.png" alt="Volkswagen" class="vw-logo-img">
+                    <span class="brand-text">Utrewal S.A.</span>
                 </a>
                 <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
                     <span></span>
@@ -80,12 +76,32 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li><a href="coches-nuevos.html" class="nav-link">Coches Nuevos</a></li>
-                    <li><a href="promociones.html" class="nav-link">Promociones</a></li>
-                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="cita-taller.html" class="nav-link">Cita Taller</a></li>
-                    <li><a href="prueba-conduccion.html" class="nav-link">Prueba</a></li>
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Vehículos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/coches-nuevos.html">Coches Nuevos</a></li>
+                            <li><a href="pages/todos-vehiculos.html">Todos los Vehículos</a></li>
+                            <li><a href="pages/promociones.html">Promociones</a></li>
+                            <li><a href="pages/prueba-conduccion.html">Prueba de Conducción</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Nosotros <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/quienes-somos.html">Quiénes Somos</a></li>
+                            <li><a href="pages/actualidad.html">Actualidad</a></li>
+                            <li><a href="pages/equipo.html">Equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cita-taller.html">Cita Taller</a></li>
+                            <li><a href="index.html#postventa">Postventa</a></li>
+                            <li><a href="index.html#servicios">Todos los Servicios</a></li>
+                        </ul>
+                    </li>
                     <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
@@ -109,7 +125,7 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="images/id7.png" alt="Volkswagen ID.7">
+                        <img src="assets/images/vehicles/id7.png" alt="Volkswagen ID.7">
                     </div>
                 </div>
             </div>
@@ -127,7 +143,7 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="images/golf.png" alt="Volkswagen Golf GTI">
+                        <img src="assets/images/vehicles/golf.png" alt="Volkswagen Golf GTI">
                     </div>
                 </div>
             </div>
@@ -145,7 +161,7 @@
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="images/tiguan.png" alt="Volkswagen Tiguan 2024">
+                        <img src="assets/images/vehicles/tiguan.png" alt="Volkswagen Tiguan 2024">
                     </div>
                 </div>
             </div>
@@ -180,7 +196,7 @@
                 <!-- Polo -->
                 <div class="model-card" data-category="compacto">
                     <div class="model-image">
-                        <img src="images/polo.png" alt="Volkswagen Polo">
+                        <img src="assets/images/vehicles/polo.png" alt="Volkswagen Polo">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -199,7 +215,7 @@
                 <!-- Golf -->
                 <div class="model-card" data-category="compacto">
                     <div class="model-image">
-                        <img src="images/golf.png" alt="Volkswagen Golf">
+                        <img src="assets/images/vehicles/golf.png" alt="Volkswagen Golf">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -218,7 +234,7 @@
                 <!-- T-Cross -->
                 <div class="model-card" data-category="suv">
                     <div class="model-image">
-                        <img src="images/tcross.png" alt="Volkswagen T-Cross">
+                        <img src="assets/images/vehicles/tcross.png" alt="Volkswagen T-Cross">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -237,7 +253,7 @@
                 <!-- T-Roc -->
                 <div class="model-card" data-category="suv">
                     <div class="model-image">
-                        <img src="images/troc.png" alt="Volkswagen T-Roc">
+                        <img src="assets/images/vehicles/troc.png" alt="Volkswagen T-Roc">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -256,7 +272,7 @@
                 <!-- Tiguan -->
                 <div class="model-card" data-category="suv">
                     <div class="model-image">
-                        <img src="images/tiguan.png" alt="Volkswagen Tiguan">
+                        <img src="assets/images/vehicles/tiguan.png" alt="Volkswagen Tiguan">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -275,7 +291,7 @@
                 <!-- Taigo -->
                 <div class="model-card" data-category="suv">
                     <div class="model-image">
-                        <img src="images/taigo.png" alt="Volkswagen Taigo">
+                        <img src="assets/images/vehicles/taigo.png" alt="Volkswagen Taigo">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -294,7 +310,7 @@
                 <!-- Passat -->
                 <div class="model-card" data-category="familiar">
                     <div class="model-image">
-                        <img src="images/passat.png" alt="Volkswagen Passat">
+                        <img src="assets/images/vehicles/passat.png" alt="Volkswagen Passat">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -313,7 +329,7 @@
                 <!-- Arteon -->
                 <div class="model-card" data-category="familiar">
                     <div class="model-image">
-                        <img src="images/arteon.png" alt="Volkswagen Arteon">
+                        <img src="assets/images/vehicles/arteon.png" alt="Volkswagen Arteon">
                         <div class="model-overlay">
                             <a href="#contacto" class="btn btn-primary">Solicitar información</a>
                         </div>
@@ -345,7 +361,7 @@
                 <div class="electric-card">
                     <div class="electric-image">
                         <div class="electric-badge">100% Eléctrico</div>
-                        <img src="images/id3.png" alt="ID.3">
+                        <img src="assets/images/vehicles/id3.png" alt="ID.3">
                     </div>
                     <div class="electric-info">
                         <h3>ID.3</h3>
@@ -372,7 +388,7 @@
                 <div class="electric-card">
                     <div class="electric-image">
                         <div class="electric-badge">100% Eléctrico</div>
-                        <img src="images/id4.png" alt="ID.4">
+                        <img src="assets/images/vehicles/id4.png" alt="ID.4">
                     </div>
                     <div class="electric-info">
                         <h3>ID.4</h3>
@@ -399,7 +415,7 @@
                 <div class="electric-card featured">
                     <div class="electric-image">
                         <div class="electric-badge">Nuevo</div>
-                        <img src="images/id7.png" alt="ID.7">
+                        <img src="assets/images/vehicles/id7.png" alt="ID.7">
                     </div>
                     <div class="electric-info">
                         <h3>ID.7</h3>
@@ -473,20 +489,20 @@
 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-charging-station"></i>
-                    </div>
-                    <h3>Instalación Wallbox</h3>
-                    <p>Te ayudamos a instalar tu punto de carga para vehículos eléctricos.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <h3>Financiación</h3>
                     <p>Condiciones especiales de financiación adaptadas a tus necesidades.</p>
                     <a href="#contacto" class="service-link">Calcular cuota <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>Instalación Wallbox</h3>
+                    <p>Te ayudamos a instalar tu punto de carga para vehículos eléctricos.</p>
+                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -658,20 +674,8 @@
                     <div class="footer-location">
                         <div class="footer-brands">
                             <!-- VW Logo -->
-                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
-                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" />
-                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
-                            </svg>
-                            <!-- VW Commercial Vehicles Logo -->
-                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
-                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" />
-                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
-                            </svg>
-                            <!-- Audi Logo (Four Rings) -->
+                            <img src="assets/images/logos/logo-vw.png" alt="Volkswagen" class="footer-logo-img">
+                            <!-- Audi Logo -->
                             <svg class="footer-brand-logo audi" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
                                 <circle cx="45" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
@@ -679,12 +683,8 @@
                                 <circle cx="95" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
                             </svg>
                             <!-- Skoda Logo -->
-                            <svg class="footer-brand-logo skoda" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="25" cy="25" r="23" fill="none" stroke="currentColor" stroke-width="2" />
-                                <path d="M15 18 L25 12 L35 18 L35 32 L25 38 L15 32 Z" fill="none" stroke="currentColor"
-                                    stroke-width="2" />
-                                <path d="M20 22 L30 22 M20 28 L30 28" stroke="currentColor" stroke-width="1.5" />
-                            </svg>
+                            <img src="assets/images/logos/logo-skoda.png" alt="Škoda"
+                                class="footer-logo-img skoda-logo">
                         </div>
                         <h3 class="footer-location-title">Utrera</h3>
                         <p class="footer-address">Ctra. Écija - Jerez, 15 - 41710 Utrera (Sevilla)</p>
@@ -709,12 +709,17 @@
                     <div class="footer-location">
                         <div class="footer-brands right">
                             <!-- VW Logo -->
-                            <svg class="footer-vw-logo" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="35" cy="35" r="33" fill="none" stroke="currentColor" stroke-width="3" />
-                                <path d="M35 5 L22 38 L35 62 L48 38 Z" fill="none" stroke="currentColor"
-                                    stroke-width="2.5" />
-                                <path d="M11 22 L35 38 L59 22" fill="none" stroke="currentColor" stroke-width="2.5" />
+                            <img src="assets/images/logos/logo-vw.png" alt="Volkswagen" class="footer-logo-img">
+                            <!-- Audi Logo -->
+                            <svg class="footer-brand-logo audi" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="45" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="70" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
+                                <circle cx="95" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2.5" />
                             </svg>
+                            <!-- Skoda Logo -->
+                            <img src="assets/images/logos/logo-skoda.png" alt="Škoda"
+                                class="footer-logo-img skoda-logo">
                         </div>
                         <h3 class="footer-location-title">Alcalá de Guadaira</h3>
                         <p class="footer-address">Autovía Sevilla - Málaga A92 Km 11 (margen derecho)<br>Salida A12 -
@@ -742,9 +747,9 @@
             <div class="container">
                 <p>&copy; 2025 Volkswagen Sevilla - Utrewal. Todos los derechos reservados.</p>
                 <div class="footer-links">
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de cookies</a>
+                    <a href="pages/aviso-legal.html">Aviso Legal</a>
+                    <a href="pages/politica-privacidad-cookies.html">Política de Privacidad y Cookies</a>
+                    <a href="pages/declaracion-accesibilidad.html">Declaración de Accesibilidad</a>
                 </div>
             </div>
         </div>
@@ -813,7 +818,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

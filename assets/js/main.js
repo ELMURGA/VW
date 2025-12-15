@@ -52,8 +52,8 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Close menu when clicking a nav link
-document.querySelectorAll('.nav-link').forEach(link => {
+// Close menu when clicking a nav link (but not dropdown toggles)
+document.querySelectorAll('.nav-menu > li > .nav-link:not(.dropdown-toggle)').forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
         menuToggle.classList.remove('active');
@@ -62,6 +62,53 @@ document.querySelectorAll('.nav-link').forEach(link => {
         spans[1].style.opacity = '';
         spans[2].style.transform = '';
         document.body.style.overflow = '';
+    });
+});
+
+// ===== Mobile Dropdown Toggle =====
+document.querySelectorAll('.nav-dropdown > .dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        // Only handle click on mobile (when menu toggle is visible)
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const parent = toggle.closest('.nav-dropdown');
+            const isActive = parent.classList.contains('active');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+                const icon = dropdown.querySelector('.dropdown-toggle i');
+                if (icon) icon.style.transform = '';
+            });
+            
+            // Toggle current dropdown
+            if (!isActive) {
+                parent.classList.add('active');
+                const icon = toggle.querySelector('i');
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    });
+});
+
+// Close dropdowns when clicking on dropdown menu links
+document.querySelectorAll('.dropdown-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Close mobile menu
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        const spans = menuToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+        document.body.style.overflow = '';
+        
+        // Close all dropdowns
+        document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
     });
 });
 
@@ -154,7 +201,10 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 const modelCards = document.querySelectorAll('.model-card');
 
 filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         // Update active button
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
@@ -164,7 +214,8 @@ filterBtns.forEach(btn => {
         modelCards.forEach(card => {
             if (filter === 'all' || card.dataset.category === filter) {
                 card.style.display = '';
-                card.style.animation = 'fadeIn 0.5s ease';
+                card.style.opacity = '1';
+                card.style.animation = 'fadeIn 0.5s ease forwards';
             } else {
                 card.style.display = 'none';
             }
@@ -491,8 +542,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements
-document.querySelectorAll('.model-card, .electric-card, .service-card, .after-sales-card').forEach(el => {
+// Observe elements (excluding model-card, which is handled by filters)
+document.querySelectorAll('.electric-card, .service-card, .after-sales-card').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
